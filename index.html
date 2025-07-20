@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskNest – To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="light-mode">
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="title">📝 TaskNest</h1>
+    <button id="toggleMode" class="toggle-mode">Toggle Mode</button>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-container">
+    <!-- Add Task Form -->
+    <section class="form-container">
+      <h2 class="form-title">Add New Task</h2>
+      <form id="taskForm" class="form-body">
+        <input type="text" id="title" placeholder="Task Title" class="input" required />
+        <textarea id="desc" placeholder="Description (optional)" class="input"></textarea>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="input-box">
+            <label for="date">Date</label>
+            <input type="date" id="date" class="input" required />
+          </div>
+          <div class="input-box">
+            <label for="time">Time</label>
+            <input type="time" id="time" class="input" required />
+          </div>
+        </div>
+        <select id="priority" class="input">
+          <option value="Low">Low Priority</option>
+          <option value="Medium">Medium Priority</option>
+          <option value="High">High Priority</option>
+        </select>
+        <button type="submit" class="submit-button">Add Task</button>
+      </form>
+    </section>
+
+    <!-- Task List -->
+    <section id="taskListContainer" class="task-list">
+      <!-- Tasks will be injected here dynamically -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

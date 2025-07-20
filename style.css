@@ -1,0 +1,141 @@
+body.light-mode {
+  background-color: #f9f5f1;
+  color: #3a3a3a;
+  font-family: sans-serif;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #8e7777;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7B4C3A;
+}
+
+.toggle-mode {
+  font-size: 0.875rem;
+  color: #7B4C3A;
+  border: 1px solid #7B4C3A;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  transition: 0.3s;
+}
+
+.toggle-mode:hover {
+  background-color: #f0e7e2;
+}
+
+.main-container {
+  max-width: 48rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+}
+
+.input-box label {
+  font-size: 0.875rem;
+  color: #555;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.submit-button {
+  background-color: #7B4C3A;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #a76b57;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task-item {
+  background-color: #fff7f3;
+  padding: 1rem;
+  border-left: 5px solid #7B4C3A;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.task-actions button {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+}
+
+.complete-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.undo-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #ff9800;
+  color: white;
+}
